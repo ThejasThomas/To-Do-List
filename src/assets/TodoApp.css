@@ -1,0 +1,130 @@
+/* TodoApp.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.h2 {
+    text-align: center;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #4A90E2;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #7EC4F5;
+}
+
+.button {
+    background-color: #4A90E2;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #7EC4F5;
+}
+
+.list {
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-items {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #4A90E2;
+    transition: background-color 0.3s;
+}
+
+.list-items.completed {
+    background-color: #e0f7fa;
+    text-decoration: line-through;
+    color: #4A90E2;
+}
+
+.list-item-list {
+    color: #4A90E2;
+    font-size: 1.2em;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.list-item-list:hover {
+    color: #7EC4F5;
+}
+
+#delete {
+    color: #E74C3C;
+}
+
+#delete:hover {
+    color: #ff6f61;
+}
+
+#edit {
+    color: #F1C40F;
+}
+
+#edit:hover {
+    color: #f9e79f;
+}
+
+#complete {
+    color: #27AE60;
+}
+
+#complete:hover {
+    color: #2ecc71;
+}
